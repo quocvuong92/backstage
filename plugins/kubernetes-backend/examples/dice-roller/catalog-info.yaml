@@ -6,7 +6,8 @@ metadata:
   tags:
     - go
   annotations:
-    'backstage.io/kubernetes-id': dice-roller
+    # 'backstage.io/kubernetes-id': dice-roller
+    'backstage.io/kubernetes-namespace': argocd-system
     'argocd/app-selector': argocd.argoproj.io/instance=app-of-addons
 spec:
   type: service
