@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: dice-roller
-  description: It rolls dice
+  name: backstage-test-component
+  description: This is a test component
   tags:
     - go
   annotations:
@@ -11,5 +11,5 @@ metadata:
     'argocd/app-selector': argocd.argoproj.io/instance=app-of-addons
 spec:
   type: service
-  lifecycle: production
-  owner: user:guest
+  lifecycle: test
+  owner: PlatformTeam
