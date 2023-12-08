@@ -7,7 +7,7 @@ metadata:
     - go
   annotations:
     # 'backstage.io/kubernetes-id': dice-roller
-    'backstage.io/kubernetes-label-selector': app.kubernetes.io/part-of=argocd
+    'backstage.io/kubernetes-label-selector': app.kubernetes.io/part-of=argocd, cnpg.io/cluster=postgresql-pg-example
     'argocd/app-selector': argocd.argoproj.io/instance=app-of-addons
 spec:
   type: service
