@@ -7,9 +7,10 @@ metadata:
     - go
   annotations:
     # 'backstage.io/kubernetes-id': dice-roller
-    'backstage.io/kubernetes-label-selector': app.kubernetes.io/part-of=argocd
-    'argocd/app-selector': argocd.argoproj.io/instance=app-of-addons
-    'kubernetes.io/api-server': https://api.test-production.hcnet.vn:443
+    #'backstage.io/kubernetes-label-selector': app.kubernetes.io/part-of=argocd
+    #'argocd/app-selector': argocd.argoproj.io/instance=app-of-addons
+    #'kubernetes.io/api-server': https://api.test-production.hcnet.vn:443
+    'backstage.io/kubernetes-cluster': test-production.hcnet.vn
 spec:
   type: service
   lifecycle: test
